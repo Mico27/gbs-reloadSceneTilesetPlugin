@@ -45,15 +45,15 @@ static void reload_bkg_tileset(const tileset_t* tiles, UBYTE bank) {
 }
 
 void reload_current_scene_tileset(SCRIPT_CTX * THIS) OLDCALL BANKED {
-	scene_t scn;
+    scene_t scn;
     MemcpyBanked(&scn, current_scene.ptr, sizeof(scn), current_scene.bank);
 
-	background_t bkg;
+    background_t bkg;
     MemcpyBanked(&bkg, scn.background.ptr, sizeof(bkg), scn.background.bank);
 
     reload_bkg_tileset(bkg.tileset.ptr, bkg.tileset.bank);
-	
-	#ifdef CGB
+
+    #ifdef CGB
     if ((_is_CGB) && (bkg.cgb_tileset.ptr)) {
         VBK_REG = 1;
         reload_bkg_tileset(bkg.cgb_tileset.ptr, bkg.cgb_tileset.bank);

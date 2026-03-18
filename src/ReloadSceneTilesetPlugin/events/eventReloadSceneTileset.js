@@ -11,7 +11,7 @@ export const fields = [
 
 export const compile = (input, helpers) => {
   const { _callNative } = helpers;
-  
+
   _callNative("reload_current_scene_tileset");
-  
+
 };
