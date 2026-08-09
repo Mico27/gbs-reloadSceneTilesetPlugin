@@ -126,3 +126,15 @@ the core compiles, move it independently of this plugin.
 
 </details>
 <!-- BANK0:END -->
+
+## Changelog
+
+This plugin has not been merged into the official [gb-studio-plugins](https://github.com/gb-studio-dev/gb-studio-plugins)
+repository, so the entries below are grouped by the date of the change itself.
+
+Only bug fixes, new features and feature changes are listed. Engine version
+bumps, patch regeneration, packaging fixes and documentation edits are omitted.
+
+### 2024-08-14
+
+- Initial release.
