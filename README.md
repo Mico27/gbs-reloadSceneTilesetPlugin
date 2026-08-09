@@ -15,6 +15,8 @@ On Game Boy Color hardware both VRAM banks are restored.
 3. [Size Limits and Restrictions](#size-limits-and-restrictions)
 4. [Events Reference](#events-reference)
 5. [Memory Footprint](#memory-footprint)
+6. [Bank 0 (HOME) Usage](#bank-0-home-usage)
+7. [Changelog](#changelog)
 
 ---
 
